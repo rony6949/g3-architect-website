@@ -78,9 +78,12 @@ main{
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
-.teams-content{
-    padding-left: 70px;
-    padding-right: 70px;
+.teams-content .facts-card-container{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.facts-card-container{
+    gap: 20px;
 }
 .teams-title{
     font-size: 2.8rem;
@@ -117,13 +120,29 @@ main{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+/* ////////////////////////////////// */
+/* sponsors  styles*/
+.sponsors{
+    text-align: center;
+    
+}
+.sponsors-img-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    gap: 40px;
+    align-items: center;
+}
+.sponsors-img-container img{
+    width: 165px;
+}
 /* responsive media queries */
 /* mobail devices */
 @media screen  and (max-width:576px) {
     header{
         padding: 20px;
     }
-    nav, .teams-container{
+    nav, .facts-card-container, .teams-container, .sponsors-img-container{
         flex-direction: column;
     }
     .teams-img-container{
@@ -138,7 +157,7 @@ main{
     header{
         padding: 50px;
     }
-    nav, .teams-container{
+    nav, .teams-container, sponsors-img-container{
         flex-direction: column;
     }
     
